@@ -1,0 +1,89 @@
+/* assets/css/dark-mode.css */
+
+body.dark-mode {
+    --main-bg: #1a202c;
+    --card-bg: #2d3748;
+    --text-color: #e2e8f0;
+    --text-muted-color: #a0aec0;
+    --border-color: #4a5568;
+    --input-bg: #2d3748;
+}
+
+body.dark-mode .sidebar {
+    --sidebar-bg: #1a202c;
+    --sidebar-active-link-bg: #2d3748;
+    border-right: 1px solid var(--border-color);
+}
+
+body.dark-mode .sidebar .logo-icon {
+    background-color: #4a5568;
+    color: #e2e8f0;
+}
+
+body.dark-mode .top-bar input,
+body.dark-mode .card,
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark-mode .btn-outline-secondary,
+body.dark-mode .filters .btn,
+body.dark-mode .table .action-btns .btn,
+body.dark-mode .modal-content,
+body.dark-mode .dropdown-menu {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .form-control::placeholder {
+    color: var(--text-muted-color);
+}
+
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode .page-header p,
+body.dark-mode .stat-card .stat-info p,
+body.dark-mode .courier-details p,
+body.dark-mode .courier-location p,
+body.dark-mode .quick-actions .list-group-item,
+body.dark-mode .activity-item span,
+body.dark-mode .dropdown-item,
+body.dark-mode .page-header h2,
+body.dark-mode .card-title,
+body.dark-mode .card-header,
+body.dark-mode .card-header h4,
+body.dark-mode .form-label,
+body.dark-mode .stat-card .stat-value,
+body.dark-mode .user-actions .profile-dropdown .user-name,
+body.dark-mode .table .agent-info .agent-name,
+body.dark-mode .table tbody td,
+body.dark-mode .modal-body strong,
+body.dark-mode .modal-title {
+    color: #fff;
+}
+
+body.dark-mode .modal-body .text-muted {
+    color: var(--text-muted-color) !important;
+}
+
+body.dark-mode .list-group-item {
+    background-color: transparent;
+    border-color: var(--border-color);
+}
+
+body.dark-mode .table-hover > tbody > tr:hover > * {
+    background-color: #4a5568;
+    color: #fff;
+}
+
+body.dark-mode .btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+body.dark-mode .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+body.dark-mode .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
